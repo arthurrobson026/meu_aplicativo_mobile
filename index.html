@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S da Vovó - Início</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section
+      class="splash"
+      id="splash-apresentacao"
+      aria-label="Apresentação do aplicativo"
+    >
+      <div class="splash-caixa">
+        <header class="splash-marca">
+          <small>PROJETO</small>
+          <h1>S.O.S da Vovó</h1>
+        </header>
+
+        <img
+          class="splash-imagem"
+          src="assets/S.O.S da Vovó.png"
+          alt="Mulher idosa deitada apertando um botão de S.O.S"
+          id="imagem-capa"
+        />
+
+        <h2 class="splash-titulo">
+          Sua saúde e segurança são nossa prioridade.
+        </h2>
+
+        <p class="splash-descricao">
+          S.O.S da Vovó é um aplicativo criado para cuidar da saúde e segurança
+          de pessoas idosas no dia a dia. Ele permite pedir ajuda rapidamente em
+          caso de emergência, avisando familiares ou contatos . É uma forma
+          prática e tranquila de saber que, se algo acontecer, a ajuda está a um
+          toque de distância.
+        </p>
+
+        <button class="botao-primario" id="Acessar " type="button">
+          ♢ Proteger-me
+        </button>
+
+        <p class="splash-rodape">Interface simples e fácil.</p>
+      </div>
+    </section>
+
+    <main class="app-shell" id="pagina-inicio">
+      <div class="app-conteudo">
+        <header class="boas-vindas" id="cabecalho-inicio">
+          <div>
+            <p class="texto-suave">Olá, querida senhora</p>
+            <h1>Seu aplicativo está ativo</h1>
+          </div>
+          <span class="icone-circular" aria-hidden="true">♢</span>
+        </header>
+
+        <hr class="divisor" />
+
+        <section aria-labelledby="titulo-acoes">
+          <h2 id="titulo-acoes">O que deseja fazer agora?</h2>
+
+          <div class="acoes-home">
+            <a class="acao-home" id="atalho-analisar" href="analise.html">
+              <article class="cartao">
+                <span class="icone-circular">▣</span>
+                <div>
+                  <h3>Analisar uma Mensagem</h3>
+                  <p>
+                    Cole a conversa suspeita para descobrir se é um golpe de
+                    impostor.
+                  </p>
+                </div>
+              </article>
+            </a>
+
+            <a class="acao-home" id="atalho-verificar" href="verificar.html">
+              <article class="cartao">
+                <span class="icone-circular">♧</span>
+                <div>
+                  <h3>Verificar Perfil dele</h3>
+                  <p>
+                    Responda a perguntas rápidas sobre as promessas e
+                    comportamentos dele.
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+
+        <section aria-labelledby="titulo-historias">
+          <h2 id="titulo-historias">Histórias comuns de golpe</h2>
+
+          <div class="historias">
+            <article class="historia-card" id="historia-engenheiro">
+              <h3>⚠ O Falso Engenheiro de Petróleo</h3>
+              <p>
+                Diz trabalhar em alto-mar, declara amor rápido e pede ajuda para
+                “liberar equipamentos”.
+              </p>
+            </article>
+
+            <article class="historia-card" id="historia-militar">
+              <h3>⚠ O Médico Militar Estrangeiro</h3>
+              <p>
+                Alega estar em missão de paz. Pede dinheiro para taxas de viagem
+                ou envio de caixas secretas.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <nav class="navegacao-inferior" aria-label="Navegação principal">
+        <a class="link-navegacao ativo" href="index.html" id="nav-inicio">
+          <span class="icone-nav">⌂</span>
+          <span>Início</span>
+        </a>
+        <a class="link-navegacao" href="analise.html" id="nav-analise">
+          <span class="icone-nav">⌕</span>
+          <span>Análise</span>
+        </a>
+        <a class="link-navegacao" href="verificar.html" id="nav-verificar">
+          <span class="icone-nav">♢</span>
+          <span>Verificar</span>
+        </a>
+        <a class="link-navegacao" href="ajuda.html" id="nav-ajuda">
+          <span class="icone-nav">ⓘ</span>
+          <span>Ajuda</span>
+        </a>
+      </nav>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

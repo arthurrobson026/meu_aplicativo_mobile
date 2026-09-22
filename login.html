@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S da Vovó - Entrar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="splash" id="pagina-login" aria-label="Tela de login">
+      <div class="splash-caixa">
+        <header class="splash-marca">
+          <small>PROJETO</small>
+          <h1>S.O.S da Vovó</h1>
+        </header>
+
+        <h2 class="splash-titulo">Entrar na sua conta</h2>
+
+        <p class="splash-descricao">
+          Faça login para acessar seus dados de saúde e os contatos de confiança
+          cadastrados.
+        </p>
+
+        <form id="formulario-login">
+          <div class="cartao area-campo">
+            <label for="login-email">✎ E-mail</label>
+            <input
+              class="campo-mensagem"
+              id="login-email"
+              name="email"
+              type="email"
+              placeholder="seuemail@exemplo.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="cartao area-campo">
+            <label for="login-senha">✎ Senha</label>
+            <input
+              class="campo-mensagem"
+              id="login-senha"
+              name="senha"
+              type="password"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <label class="cartao opcao-perfil" for="login-lembrar">
+            <input id="login-lembrar" name="lembrar" type="checkbox" />
+            <span>Lembrar meus dados neste aparelho</span>
+          </label>
+
+          <button class="botao-primario" id="botao-entrar" type="submit">
+            ♢ Entrar
+          </button>
+
+          <a
+            class="botao-secundario"
+            id="link-esqueci-senha"
+            href="#"
+            style="display: block; text-align: center; text-decoration: none"
+          >
+            Esqueci minha senha
+          </a>
+
+          <p
+            class="mensagem-feedback"
+            id="feedback-login"
+            aria-live="polite"
+          ></p>
+        </form>
+
+        <p class="splash-rodape">
+          Ainda não tem conta?
+          <a href="cadastro.html" id="link-criar-conta">Criar conta</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

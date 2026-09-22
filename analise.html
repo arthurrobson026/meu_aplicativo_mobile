@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S da Vovó - Análise</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="app-shell" id="pagina-analise">
+      <div class="app-conteudo">
+        <header>
+          <h1>Análise de Sintomas</h1>
+          <hr class="divisor" />
+          <h2>O que você anda sentindo?</h2>
+          <p class="texto-suave">
+            Descreva abaixo o que você anda sentindo nos últimos dias.
+          </p>
+        </header>
+
+        <form id="formulario-analise">
+          <div class="cartao area-campo">
+            <label for="mensagem-para-analisar"
+              >✎ Descreva os sintomas aqui...</label
+            >
+            <textarea
+              class="campo-mensagem"
+              id="mensagem-para-analisar"
+              name="mensagem"
+              placeholder="Ex.: Dores no peito, tontura, formigamento, falta de ar, etc..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="aviso-privacidade" id="aviso-privacidade">
+            📃 Suas informaçôes sobre seus sintomas serão enviadas para a
+            análise.
+          </div>
+
+          <button
+            class="botao-primario"
+            id="botao-analisar-mensagem"
+            type="submit"
+          >
+            ⌕ Analisar Sintomas
+          </button>
+
+          <p
+            class="mensagem-feedback"
+            id="feedback-analise"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+
+      <nav class="navegacao-inferior" aria-label="Navegação principal">
+        <a class="link-navegacao" href="index.html" id="nav-inicio">
+          <span class="icone-nav">⌂</span>
+          <span>Início</span>
+        </a>
+        <a class="link-navegacao ativo" href="analise.html" id="nav-analise">
+          <span class="icone-nav">⌕</span>
+          <span>Análise</span>
+        </a>
+        <a class="link-navegacao" href="verificar.html" id="nav-verificar">
+          <span class="icone-nav">♢</span>
+          <span>Verificar</span>
+        </a>
+        <a class="link-navegacao" href="ajuda.html" id="nav-ajuda">
+          <span class="icone-nav">ⓘ</span>
+          <span>Ajuda</span>
+        </a>
+      </nav>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S da Vovó - Resultado</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="app-shell" id="pagina-resultado">
+      <div class="app-conteudo">
+        <header class="topo-pagina">
+          <button
+            class="botao-voltar"
+            id="botao-voltar-resultado"
+            data-acao="voltar"
+            type="button"
+            aria-label="Voltar"
+          >
+            ←
+          </button>
+          <h1>Resultado da Análise</h1>
+        </header>
+
+        <hr class="divisor" />
+
+        <section class="resultado-box" id="resultado-principal">
+          <div class="resultado-status">● Sinal de alerta identificado</div>
+          <h2>Alta Suspeita de Infarto</h2>
+          <p class="texto-suave">
+            Atenção: não é um diagnóstico definitivo, porém de acordo com seus
+            sintomas você está em um quadro delicado.
+          </p>
+        </section>
+
+        <section aria-labelledby="titulo-sinais">
+          <h2 id="titulo-sinais">Sinais que chamaram atenção:</h2>
+
+          <div class="lista-sinais">
+            <article class="sinal" id="sinal-dinheiro">
+              <span class="icone-circular">$</span>
+              <div>
+                <strong>Falta de ar (Dispneia)</strong>
+                <span class="texto-suave">
+                  Dificuldade respiratória repentina, que vem acompanhada de
+                  desconforto no peito.</span
+                >
+              </div>
+            </article>
+
+            <article class="sinal" id="sinal-urgencia">
+              <span class="icone-circular">◷</span>
+              <div>
+                <strong>Tontura, vertigem ou desmaio</strong>
+                <span class="texto-suave"
+                  >Sensação de fraqueza extrema, instabilidade ou perda súbita
+                  de consciência.</span
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="recomendacoes" id="bloco-recomendacoes">
+          <h2>Atitudes recomendadas:</h2>
+          <ul>
+            <li>Ligue imediatamente para o atendimento de emergência.</li>
+            <li>Mantenha-se em repouso.</li>
+            <li>Tente manter a calma</li>
+          </ul>
+        </section>
+
+        <a
+          class="botao-secundario"
+          id="botao-falar-confianca"
+          href="tel:+550000000000"
+          style="display: block; text-align: center; text-decoration: none"
+        >
+          ☎ Falar com Confiança
+        </a>
+      </div>
+
+      <nav class="navegacao-inferior" aria-label="Navegação principal">
+        <a class="link-navegacao" href="index.html" id="nav-inicio">
+          <span class="icone-nav">⌂</span>
+          <span>Início</span>
+        </a>
+        <a class="link-navegacao ativo" href="analise.html" id="nav-analise">
+          <span class="icone-nav">⌕</span>
+          <span>Análise</span>
+        </a>
+        <a class="link-navegacao" href="verificar.html" id="nav-verificar">
+          <span class="icone-nav">♢</span>
+          <span>Verificar</span>
+        </a>
+        <a class="link-navegacao" href="ajuda.html" id="nav-ajuda">
+          <span class="icone-nav">ⓘ</span>
+          <span>Ajuda</span>
+        </a>
+      </nav>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

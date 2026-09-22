@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S da Vovó - Verificar Perfil</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="app-shell" id="pagina-verificar">
+      <div class="app-conteudo">
+        <header>
+          <h1>Verificar Perfil</h1>
+          <hr class="divisor" />
+          <h2>Diagnóstico de Sáude</h2>
+          <p class="texto-suave">
+            Responda sinceramente a estas perguntas sobre a sua sáude. Isso
+            ajuda a avaliar o seu quadro.
+          </p>
+        </header>
+
+        <form id="formulario-perfil">
+          <div class="opcoes-perfil">
+            <label class="cartao opcao-perfil" for="perfil-favor-financeiro">
+              <input
+                id="perfil-favor-financeiro"
+                name="sinais"
+                type="checkbox"
+              />
+              <span
+                >Você está sentindo dores intensas ou falta de ar
+                repentina?</span
+              >
+            </label>
+
+            <label class="cartao opcao-perfil" for="perfil-recusa-video">
+              <input id="perfil-recusa-video" name="sinais" type="checkbox" />
+              <span
+                >Você está se recusando a tomar os medicamentos prescritos ou
+                sentindo confusão ao tentar usá-los?
+              </span>
+            </label>
+
+            <label class="cartao opcao-perfil" for="perfil-amor-rapido">
+              <input id="perfil-amor-rapido" name="sinais" type="checkbox" />
+              <span
+                >Você tem apresentado desorientação severa, tontura ou fraqueza
+                extrema de repente?</span
+              >
+            </label>
+
+            <label class="cartao opcao-perfil" for="perfil-evita-encontro">
+              <input id="perfil-evita-encontro" name="sinais" type="checkbox" />
+              <span
+                >Você tem evitado relatar os sintomas reais, justificando para
+                si mesma que "não é nada"?</span
+              >
+            </label>
+          </div>
+
+          <button
+            class="botao-primario"
+            id="botao-verificar-sinais"
+            type="submit"
+          >
+            ♢ Verificar Sinais
+          </button>
+
+          <div
+            class="resultado-perfil"
+            id="resultado-perfil"
+            aria-live="polite"
+          ></div>
+
+          <p class="splash-rodape"></p>
+        </form>
+      </div>
+
+      <nav class="navegacao-inferior" aria-label="Navegação principal">
+        <a class="link-navegacao" href="index.html" id="nav-inicio">
+          <span class="icone-nav">⌂</span>
+          <span>Início</span>
+        </a>
+        <a class="link-navegacao" href="analise.html" id="nav-analise">
+          <span class="icone-nav">⌕</span>
+          <span>Análise</span>
+        </a>
+        <a
+          class="link-navegacao ativo"
+          href="verificar.html"
+          id="nav-verificar"
+        >
+          <span class="icone-nav">♢</span>
+          <span>Verificar</span>
+        </a>
+        <a class="link-navegacao" href="ajuda.html" id="nav-ajuda">
+          <span class="icone-nav">ⓘ</span>
+          <span>Ajuda</span>
+        </a>
+      </nav>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
